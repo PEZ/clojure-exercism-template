@@ -1,6 +1,6 @@
 {
     "workbench.editorAssociations": {
-        "INSTRUCTIONS.md": "vscode.markdown.preview.editor"
+        "*.md": "vscode.markdown.preview.editor"
     },
     "editor.fontSize": 14,
     "breadcrumbs.enabled": false,
@@ -13,4 +13,5 @@
     },
     "markdown.preview.fontSize": 16,
     "problems.decorations.enabled": false,
+    "editor.lightbulb.enabled": false
 }

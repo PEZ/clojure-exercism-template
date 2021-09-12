@@ -12,3 +12,5 @@ pom.xml.asc
 .lein-failures
 .nrepl-port
 .cpcache/
+**/.calva/output-window/output.calva-repl
+**/.lsp/sqlite*db
