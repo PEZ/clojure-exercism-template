@@ -9,11 +9,16 @@ This is a [Clojure](https://clojure.org/) template configured for running the [E
 1. Copy this project by click the ”Use this Template” button.
    * Reading this from your newly created copy? Awesome. 
 1. Open this link: https://gitpod.io/from-referrer/
-   * <details><summary>Using Safari?</summary>Then the link probably won't work. Instead prepend the repository URL with `https://gitpod.io/#` and load that page.
-   * This will open the repository in a Gitpod workspace in the browser. (Might take a little while.) There will be an instance of VS Code and a VNC window there.
+   * This will open the repository in a Gitpod workspace in the browser.
    * _NB: If you don't have a Gitpod account, use the option to **Sign-up with GitHub**._
 
-It is worth the wait, because in your browser you'll then have:
+<details><summary>Using Safari?</summary>
+
+Then the link probably won't work. Instead prepend the repository URL with `https://gitpod.io/#` and load that page.
+
+</details>
+
+It might take a little while, but it is well worth the wait, because in your browser you'll then have:
 
 * A Linux virtual machine with full root access and these things installed:
     * Java
