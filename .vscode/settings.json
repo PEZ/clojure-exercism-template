@@ -1,0 +1,16 @@
+{
+    "workbench.editorAssociations": {
+        "INSTRUCTIONS.md": "vscode.markdown.preview.editor"
+    },
+    "editor.fontSize": 14,
+    "breadcrumbs.enabled": false,
+    "editor.minimap.enabled": false,
+    "calva.prettyPrintingOptions": {
+        "enabled": true,
+        "printEngine": "pprint",
+        "width": 40,
+        "maxLength": null
+    },
+    "markdown.preview.fontSize": 16,
+    "problems.decorations.enabled": false,
+}

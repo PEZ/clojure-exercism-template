@@ -4,3 +4,21 @@ image:
 vscode:
   extensions:
     - betterthantomorrow.calva
+
+ports:
+  - port: 5900
+    onOpen: ignore
+  - port: 6080
+    onOpen: ignore
+    
+tasks:
+  - name: Initialize Exercism
+    init: echo -e "{\n  \"workspace\":" \"${PWD}\"\n}" > /home/gitpod/.config/exercism/user.json
+  - name: Prepare deps
+    init: clojure -Sdeps '{:deps {nrepl/nrepl {:mvn/version,"0.8.3"},cider/cider-nrepl {:mvn/version,"0.26.0"}}}' -P
+  - name: INSTRUCTIONS
+    command: code doc/INSTRUCTIONS.md
+
+github:
+  prebuilds:
+    main: true
