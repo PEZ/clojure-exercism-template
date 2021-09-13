@@ -17,8 +17,6 @@ tasks:
         mkdir -p .exercism-config
         WS_DIR=${PWD}
         (cd ~/.config && ln -s ${WS_DIR}/.exercism-config exercism) & kill -9 "$BASHPID"
-  - name: Prepare deps
-    init: clojure -Sdeps '{:deps {nrepl/nrepl {:mvn/version,"0.8.3"},cider/cider-nrepl {:mvn/version,"0.26.0"}}}' -P & kill -9 "$BASHPID"
   - name: INSTRUCTIONS
     command: code INSTRUCTIONS.md & kill -9 "$BASHPID"
   - name: Excercism terminal
