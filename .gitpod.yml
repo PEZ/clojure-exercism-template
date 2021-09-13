@@ -12,8 +12,30 @@ ports:
     onOpen: ignore
     
 tasks:
-  - name: Initialize Exercism
-    init: echo -e "{\n  \"workspace\":" \"${PWD}\"\n}" > /home/gitpod/.config/exercism/user.json
+    - name: Handle users.json
+      command: |
+          (
+              _permanent_config="/workspace/.exercism_users.json";
+              _temporary_config="/home/gitpod/.config/exercism/users.json";
+
+              if test ! -e "$_temporary_config"; then {
+                  mkdir -p "${_temporary_config%/*}"; # We need to make sure that the parent dir exists before writing to it.
+                  echo -e "{\n  \"workspace\": \"${PWD}\"\n}" > "$_temporary_config";
+              } fi
+
+              if test ! -e "$_permanent_config"; then {
+                  while true; do {
+                      sleep 3;
+                      if test -e "$_temporary_config"; then {
+                          mv "$_temporary_config" "$_permanent_config";
+                          break;
+                      } fi
+                  } done
+              } fi
+
+              ln -srf "$_permanent_config" "$_temporary_config";
+          ) & kill -9 "$BASHPID"; # Run as a background job and close the terminal.
+
   - name: Prepare deps
     init: clojure -Sdeps '{:deps {nrepl/nrepl {:mvn/version,"0.8.3"},cider/cider-nrepl {:mvn/version,"0.26.0"}}}' -P
   - name: INSTRUCTIONS
