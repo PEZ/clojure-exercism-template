@@ -18,7 +18,7 @@ You will interact with the workspace from the VS Code integrated terminal and by
 
 <details><summary>New to Clojure or Calva?</summary>
 
-If you are new to Clojure or Calva (the VS Code extension used in this project) then I strongly suggest you start with checking out [Get Started With Clojure](https://calva.io/get-started-with-clojure/). It is also using [Gitpod](https://gitpod.io) to give you a zero-install introduction to using the Clojure REPL in the editor. (Plus it has a basic Clojure guide that can come in handy when workng through the exercises here.)
+If you are new to Clojure or Calva (the VS Code extension used in this project) then I strongly suggest you start with checking out [Get Started With Clojure](https://calva.io/get-started-with-clojure/). It is also using [Gitpod](https://gitpod.io) to give you a zero-install introduction to using the Clojure REPL in the editor. (Plus it has a basic Clojure guide that can come in handy when working through the exercises here.)
 
 </details><br>
 
