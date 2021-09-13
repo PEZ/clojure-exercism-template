@@ -34,8 +34,6 @@ Then issue this command in the integrated terminal:
 exercism configure -w . -t <your token>
 ```
 
-**NB:** _Currently you'll have to run this command evrytime you start the workspace in Gitpod. I am investigating how to fix this._
-
 ## Workflow
 
 To work with the exercise you will for each one repeat these steps (step details below):
