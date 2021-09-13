@@ -85,6 +85,8 @@ With the test file open, issue the command **Start a Project REPL and Connect (a
 
 ![The Calva REPL button](assets/calva-repl-button.png)
 
+(If you are looking for the REPL button before having opened the test file, you might not find it. Calva activates when a Clojure file is opened.)
+
 In the Project type menu select `deps.edn`.
 
 ![Calva Jack-in Project Types](assets/calva-jack-in-project-types.png)
@@ -127,7 +129,7 @@ This is where the fun begins! Your task is to write a solution that will make th
 
 Now and then you'll want to run the tests. There's a command for that:
 
-**Calva: Run Tests for Current Namespace**, `Ctrl+Alt+C t`
+**Calva: Run Tests for Current Namespace**, `Ctrl+Alt+C T`
 
 Rinse and repeat!
 
@@ -149,7 +151,11 @@ From there it will be up to you and your mentor how many times you'll be submitt
 
 ### Celebrate 🎉 🎊 
 
-Learning Clojure this way is very rewarding. I hope you celebrate the steps you take adnd that you spend some time reflecting and reviwing your mentors. They deserve feedback and appreciation for all the work they are contributing to help the rest of us improve.
+Learning Clojure this way is very rewarding. I hope you celebrate the steps you take and that you spend some time reflecting and reviwing your mentors. They deserve feedback and appreciation for all the work they are contributing to help the rest of us improve.
+
+### Next exercise!
+
+When you are ready for the next exercise, consider closing the Calva Output/REPL window for this exercise first. It might get confusing when a second window opens.
 
 ## See also
 
