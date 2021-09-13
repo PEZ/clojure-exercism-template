@@ -12,15 +12,18 @@ ports:
     onOpen: ignore
     
 tasks:
-  - name: Persist Excercism config
+  - name: Excercism terminal
     command: |
+        # Persist Exercism config
         mkdir -p .exercism-config
         WS_DIR=${PWD}
-        (cd ~/.config && ln -s ${WS_DIR}/.exercism-config exercism) & kill -9 "$BASHPID"
-  - name: INSTRUCTIONS
-    command: code INSTRUCTIONS.md & kill -9 "$BASHPID"
-  - name: Excercism terminal
-    command: echo "Here's a terminal for using the excerism CLI tool 💪"
+        (cd ~/.config && ln -s ${WS_DIR}/.exercism-config exercism)
+        
+        # Open instructions in VS Code
+        code INSTRUCTIONS.md
+
+        # Leave a friendly message about the terminal
+        echo "Here's a terminal for using the excerism CLI tool 💪"
 
 github:
   prebuilds:
