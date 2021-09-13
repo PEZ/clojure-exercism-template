@@ -4,6 +4,10 @@ This is a [Clojure](https://clojure.org/) template configured for running the [E
 
 ![Exercism + Gitpod + Calva](assets/exercism-clojure-track-wo-header.png)
 
+## Rationale
+
+Why would you want to use another web browser editor than the Exercism built in one? Because this one supports Interactive Programming (aka REPL Driven Development). It is one of Clojure's main super powers and if you are going to spend time learning Clojure, you probably also should learn the habits and the workflow that makes Clojure programmers so happy and effective.
+
 ## How to use
 
 1. Copy this project by click the ”Use this Template” button.
